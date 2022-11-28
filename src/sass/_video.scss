@@ -1,0 +1,99 @@
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/bg-mobile.jpg);
+
+    @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/bg-mobile@2x.jpg);
+  }
+    @media screen and (max-width: 1279px) {
+    background-image: url(../images/bg-tablet.jpg);
+  }
+
+    @media (min-device-pixel-ratio: 2) and (max-width: 1279px),
+    (min-resolution: 192dpi) and (max-width: 1279px),
+    (min-resolution: 2dppx) and (max-width: 1279px) {
+    background-image: url(../images/bg-tablet@2x.jpg);
+  }
+
+    @media screen and (min-width: 1280px) {
+    background-image: url(../images/bg-desctop.jpg);
+  }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) and (min-width: 1280px),
+    (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url(../images/bg-desctop@2x.jpg);
+  }
+    
+    &__title{
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $white-text-color;
+        margin-bottom: 24px;
+    }
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 24px;
+    &__item{
+        background: transparent;
+    }
+    &__link{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: $accent-color;
+        border-radius: 50%;
+        background-clip: padding-box;
+        padding: 1px;
+        border: none;
+
+        &::before{
+            position: absolute;
+            content: "";
+            translate: (-50%, -50%);
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            background: $accent-color;
+            border-radius: 50%;
+            z-index: 1;
+            transition: opacity;
+            opacity: 0;
+        }
+        &:hover::before,
+        &:focus::before{
+            opacity: 1;
+        }
+    }
+    &__icon{
+        fill: $white-text-color;
+    }
+}  
+.video-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
