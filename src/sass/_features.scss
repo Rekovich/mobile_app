@@ -14,7 +14,7 @@
 //     color: var(--color-black);
 // }
 
-h1,
+// h1,
 h2,
 h3,
 p {
@@ -49,10 +49,6 @@ img {
     }
 }
 
-// .link {
-//     text-decoration: none;
-// }
-
 .section {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -66,50 +62,21 @@ img {
     }
 }
 
-.title-section {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-
-    @media screen and (min-width: 768px) {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.2083;
-    }
-}
-
-// .visually-hidden {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     border: 0;
-//     padding: 0;
-//     white-space: nowrap;
-//     clip-path: inset(100%);
-//     clip: rect(0 0 0 0);
-//     overflow: hidden;
-// }
-
 // key features
 .features {
-    background-color: var(--color-white);
+    background-color: $menu-white-color;
     display: flex;
     // position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
 
     @media screen and (max-width: 767px) {
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
+        background: url(../images/bgnd-image.svg) no-repeat center/cover;
     }
 
-    // @media screen and (min-width: 1280px) {
-    //     background-image: url(../images/bgnd-desktop.png);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
+    @media screen and (min-width: 1280px) {
+        background: url(../images/bgnd-desktop.svg) no-repeat center/cover;
+    }
 
     &__container {
     //     background-image: url(../images/bgnd-image.png);
@@ -135,9 +102,18 @@ img {
     }
 
     &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
         justify-content: center;
-        color: var(--color-black);
+        color: $text-color;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2083;
+        }
 
         @media screen and (max-width: 1279px) {
             margin-bottom: 40px;
@@ -149,39 +125,39 @@ img {
         }
     }
 
-    &__gradient-upper {
-        position: absolute;
+    // &__gradient-upper {
+    //     position: absolute;
 
-        @media screen and (max-width: 767px) {
-            width: 249px;
-            height: 167px;
-            left: 30px;
-            top: 135px;
-            // background-image: url(../images/gradient-mobile-upper.svg);
-            background-image: linear-gradient(to right, rgba(0, 197, 235, 0.2), rgba(181, 68, 254, 0.2));
-            filter: blur(110.5px);
-            transform: rotate(39.93deg);
-        }
+    //     @media screen and (max-width: 767px) {
+    //         width: 249px;
+    //         height: 167px;
+    //         left: 30px;
+    //         top: 135px;
+    //         // background-image: url(../images/gradient-mobile-upper.svg);
+    //         background-image: linear-gradient(to right, rgba(0, 197, 235, 0.2), rgba(181, 68, 254, 0.2));
+    //         filter: blur(110.5px);
+    //         transform: rotate(39.93deg);
+    //     }
 
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
-            display: none;
-        }
+    //     @media screen and (min-width: 768px) and (max-width: 1279px) {
+    //         display: none;
+    //     }
 
-        @media screen and (min-width: 1280px) {
-            width: 304px;
-            height: 203px;
-            left: 964px;
-            top: 45px;
-            // background-image: url(../images/gradient-desktop-upper.svg);
-            background-image: linear-gradient(to right, rgba(0, 197, 235, 0.2), rgba(181, 68, 254, 0.2));
-            filter: blur(110.5px);
-        }
-    }
+    //     @media screen and (min-width: 1280px) {
+    //         width: 304px;
+    //         height: 203px;
+    //         left: 964px;
+    //         top: 45px;
+    //         // background-image: url(../images/gradient-desktop-upper.svg);
+    //         background-image: linear-gradient(to right, rgba(0, 197, 235, 0.2), rgba(181, 68, 254, 0.2));
+    //         filter: blur(110.5px);
+    //     }
+    // }
 
     &__explanation {
         font-weight: 500;
         text-align: center;
-        color: var(--color-black);
+        color: $text-color;
         
         @media screen and (max-width: 767px) {
             font-size: 14px;
@@ -213,7 +189,7 @@ img {
 
         @media screen and (max-width: 767px) {
             margin-bottom: 40px;
-            z-index: 9;
+            // z-index: 9;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -230,35 +206,35 @@ img {
         }
     }
 
-    &__gradient-lower {
-        position: absolute;
+    // &__gradient-lower {
+    //     position: absolute;
 
-        @media screen and (max-width: 767px) {
-            width: 427.76px;
-            height: 337.57px;
-            left: -30px;
-            top: 920px;
-            // background-image: url(../images/gradient-mobile-lower.svg);
-            background-image: linear-gradient(to top right, rgba(0, 197, 235, 0.25), rgba(61, 153, 241, 0.16), rgba(181, 68, 254, 0.25));
-            filter: blur(109.5px);
-            transform: rotate(174.64deg);
-        }
+    //     @media screen and (max-width: 767px) {
+    //         width: 427.76px;
+    //         height: 337.57px;
+    //         left: -30px;
+    //         top: 920px;
+    //         // background-image: url(../images/gradient-mobile-lower.svg);
+    //         background-image: linear-gradient(to top right, rgba(0, 197, 235, 0.25), rgba(61, 153, 241, 0.16), rgba(181, 68, 254, 0.25));
+    //         filter: blur(109.5px);
+    //         transform: rotate(174.64deg);
+    //     }
 
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
-            display: none;
-        }
+    //     @media screen and (min-width: 768px) and (max-width: 1279px) {
+    //         display: none;
+    //     }
 
-        @media screen and (min-width: 1280px) {
-            width: 1044.38px;
-            height: 823.76px;
-            left: -225px;
-            top: 230px;
-            // background-image: url(../images/gradient-desktop-lower.svg);
-            background-image: linear-gradient(to top right, rgba(0, 197, 235, 0.25), rgba(61, 153, 241, 0.16), rgba(181, 68, 254, 0.25));
-            filter: blur(109.5px);
-            transform: rotate(59.96deg);
-        }
-    }
+    //     @media screen and (min-width: 1280px) {
+    //         width: 1044.38px;
+    //         height: 823.76px;
+    //         left: -225px;
+    //         top: 230px;
+    //         // background-image: url(../images/gradient-desktop-lower.svg);
+    //         background-image: linear-gradient(to top right, rgba(0, 197, 235, 0.25), rgba(61, 153, 241, 0.16), rgba(181, 68, 254, 0.25));
+    //         filter: blur(109.5px);
+    //         transform: rotate(59.96deg);
+    //     }
+    // }
     
     &__list {
         display: flex;
@@ -269,19 +245,23 @@ img {
         }
 
         @media screen and (min-width: 768px) and (max-width: 1279px) {
-            // justify-content: flex-end;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 80px;
-            flex-wrap: wrap;
-            padding-left: 380px;
-            position: relative;
+            // flex-wrap: wrap;
+            // padding-left: 380px;
+            // position: relative;
+            padding-right: 40px;
         }
 
         @media screen and (min-width: 1280px) {
             flex-wrap: wrap;
-            gap: 80px;
-            padding-left: 849px;
-            position: relative;
+            gap: 453px;
+            // padding-left: 849px;
+            // position: relative;
             margin-top: 57px;
+            row-gap: 80px;
+            padding-left: 137px;
         }
 
         // &:last-child {}
@@ -308,41 +288,63 @@ img {
         }
 
         @media screen and (min-width: 768px) and (max-width: 1279px) {
-            max-width: 278px;
-            max-height: 88px;
+            // max-width: 278px;
+            // max-height: 88px;
 
-            &:last-child {
-                position: absolute;
-                top: 672px;
-                left: 32px;
+            // &:last-child {
+            //     position: absolute;
+            //     top: 672px;
+            //     left: 32px;
+            // }
+
+            &:nth-child(-n + 4) {
+                grid-column: span 2;
+                display: flex;
+                justify-content: end;
+            }
+
+            &:nth-child(n + 5) {
+                max-width: 278px;
             }
         }
 
         @media screen and (min-width: 1280px) {
             max-width: 260px;
+            // flex-basis: 50%;
 
-            // &:nth-child(2n + 1) {
+            &:nth-child(2n) {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            // &:nth-child(1) {
             //     position: absolute;
+            //     top: 0;
             //     left: 137px;
             // }
 
-            &:nth-child(1) {
-                position: absolute;
-                top: 0;
-                left: 137px;
-            }
+            // &:nth-child(2) {
+            //     position: absolute;
+            //     top: 185px;
+            //     left: 137px;
+            // }
 
-            &:nth-child(2) {
-                position: absolute;
-                top: 185px;
-                left: 137px;
-            }
+            // &:nth-child(3) {
+            //     position: absolute;
+            //     top: 370px;
+            //     left: 137px;
+            // }
+        }
+    }
 
-            &:nth-child(3) {
-                position: absolute;
-                top: 370px;
-                left: 137px;
-            }
+    &__item-style {
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            max-width: 278px;
+            height: 88px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 259px;
         }
     }
 
@@ -381,8 +383,8 @@ img {
         }
 
         @media screen and (min-width: 1280px) {
-            max-width: 240px;
-            max-height: 68px;
+            // max-width: 240px;
+            // max-height: 68px;
             padding-left: 39px;
         }
     }
