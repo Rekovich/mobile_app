@@ -14,18 +14,18 @@ p {
   background-position: center;
   background-image: url(../images/bg-mobile.jpg);
 
-  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-    (min-resolution: 192dpi) and (max-width: 767px),
-    (min-resolution: 2dppx) and (max-width: 767px) {
+  @media (min-device-pixel-ratio: 2) and (max-width: 767.98px),
+    (min-resolution: 192dpi) and (max-width: 767.98px),
+    (min-resolution: 2dppx) and (max-width: 767.98px) {
     background-image: url(../images/bg-mobile@2x.jpg);
   }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279.98px) {
     background-image: url(../images/bg-tablet.jpg);
   }
 
-  @media (min-device-pixel-ratio: 2) and (max-width: 1279px),
-    (min-resolution: 192dpi) and (max-width: 1279px),
-    (min-resolution: 2dppx) and (max-width: 1279px) {
+  @media (min-device-pixel-ratio: 2) and (max-width: 1279.98px),
+    (min-resolution: 192dpi) and (max-width: 1279.98px),
+    (min-resolution: 2dppx) and (max-width: 1279.98px) {
     background-image: url(../images/bg-tablet@2x.jpg);
   }
 
@@ -39,7 +39,7 @@ p {
     background-image: url(../images/bg-desctop@2x.jpg);
   }
   &__container {
-    @media screen and (min-width: 1279px) {
+    @media screen and (min-width: 1279.98px) {
       display: flex;
     }
   }
