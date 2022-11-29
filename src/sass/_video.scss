@@ -51,7 +51,7 @@ p {
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
-    color: #ffffff;
+    color: $white-text-color;
     margin-bottom: 24px;
     @media screen and (min-width: 768px) {
       font-size: 24px;
@@ -107,7 +107,7 @@ p {
 
   &__link {
     position: relative;
-    background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    background-image: $accent-color;
     background-clip: padding-box;
     border: none;
     border-radius: 50%;
@@ -130,7 +130,7 @@ p {
       transform: translate(-50%, -50%);
       width: calc(100% - 2px);
       height: calc(100% - 2px);
-      background: #06071b;
+      background: $bgc-dark;
       border-radius: 50%;
       z-index: 1;
       opacity: 0;
@@ -138,7 +138,7 @@ p {
   }
 
   &__icon {
-    fill: #ffffff;
+    fill: $white-text-color;
     z-index: 2;
   }
 }
