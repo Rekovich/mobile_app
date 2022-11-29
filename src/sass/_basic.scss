@@ -44,3 +44,18 @@ img {
   background-color: $accent-color;
   border-radius: 50%;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+}
