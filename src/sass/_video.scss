@@ -14,7 +14,6 @@
   }
   @media screen and (max-width: 1279px) {
     background-image: url(../images/bg-tablet.jpg);
-    padding-bottom: 40px;
   }
 
   @media (min-device-pixel-ratio: 2) and (max-width: 1279px),
@@ -35,6 +34,16 @@
   &__container {
     @media screen and (min-width: 1279px) {
       display: flex;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 768px;
+      width: 100%;
+    }
+    @media screen and (min-width: 320px) {
+      min-width: 320px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -64,7 +73,6 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 1.1875;
-      margin: 20px auto 0;
     }
 
     @media screen and (min-width: 1280px) {
