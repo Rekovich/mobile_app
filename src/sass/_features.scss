@@ -83,34 +83,7 @@
         }
     }
 
-    // &__gradient-upper {
-    //     position: absolute;
 
-    //     @media screen and (max-width: 767px) {
-    //         width: 249px;
-    //         height: 167px;
-    //         left: 30px;
-    //         top: 135px;
-    //         // background-image: url(../images/gradient-mobile-upper.svg);
-    //         background-image: linear-gradient(to right, rgba(0, 197, 235, 0.2), rgba(181, 68, 254, 0.2));
-    //         filter: blur(110.5px);
-    //         transform: rotate(39.93deg);
-    //     }
-
-    //     @media screen and (min-width: 768px) and (max-width: 1279px) {
-    //         display: none;
-    //     }
-
-    //     @media screen and (min-width: 1280px) {
-    //         width: 304px;
-    //         height: 203px;
-    //         left: 964px;
-    //         top: 45px;
-    //         // background-image: url(../images/gradient-desktop-upper.svg);
-    //         background-image: linear-gradient(to right, rgba(0, 197, 235, 0.2), rgba(181, 68, 254, 0.2));
-    //         filter: blur(110.5px);
-    //     }
-    // }
 
     &__explanation {
         font-weight: 500;
@@ -164,35 +137,7 @@
         }
     }
 
-    // &__gradient-lower {
-    //     position: absolute;
 
-    //     @media screen and (max-width: 767px) {
-    //         width: 427.76px;
-    //         height: 337.57px;
-    //         left: -30px;
-    //         top: 920px;
-    //         // background-image: url(../images/gradient-mobile-lower.svg);
-    //         background-image: linear-gradient(to top right, rgba(0, 197, 235, 0.25), rgba(61, 153, 241, 0.16), rgba(181, 68, 254, 0.25));
-    //         filter: blur(109.5px);
-    //         transform: rotate(174.64deg);
-    //     }
-
-    //     @media screen and (min-width: 768px) and (max-width: 1279px) {
-    //         display: none;
-    //     }
-
-    //     @media screen and (min-width: 1280px) {
-    //         width: 1044.38px;
-    //         height: 823.76px;
-    //         left: -225px;
-    //         top: 230px;
-    //         // background-image: url(../images/gradient-desktop-lower.svg);
-    //         background-image: linear-gradient(to top right, rgba(0, 197, 235, 0.25), rgba(61, 153, 241, 0.16), rgba(181, 68, 254, 0.25));
-    //         filter: blur(109.5px);
-    //         transform: rotate(59.96deg);
-    //     }
-    // }
     
     &__list {
         display: flex;
