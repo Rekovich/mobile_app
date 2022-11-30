@@ -1,0 +1,2 @@
+window.addEventListener("load",(function(){var e=document.querySelectorAll('[data-slider="testimonials-slider"]');e&&e.forEach((function(e){var i=e.querySelector(".swiper-pagination");swiper=new Swiper(e.querySelector(".swiper"),{speed:1500,centeredSlides:!0,slidesPerView:1,spaceBetween:20,pagination:{el:i,clickable:!0,renderBullet:function(e,i){return'<li class="'+i+'"></li>'}}})}))}),!1);
+//# sourceMappingURL=index.400ea806.js.map
