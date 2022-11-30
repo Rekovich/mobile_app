@@ -1,0 +1,44 @@
+<section class="hero">
+  <div class="hero__container">
+    <h1 id="home" class="hero__title">Introducing Mobileapp</h1>
+    <h2 class="hero__subtitle">Maecenas vitae tellus sapien. Prasent</h2>
+    <ul class="hero__list list">
+      <li class="hero__item">semper scelerisque tristique a enim</li>
+      <li class="hero__item">Integer ut mattis nulla, eget vehicula elit</li>
+      <li class="hero__item">Prasent rutrum ac nunc et</li>
+    </ul>
+    <div class="wraper-btn">
+      <button class="hero__btn" type="button">Download</button>
+    </div>
+  </div>
+  <div class="hero__wraper--phone">
+    <picture>
+      <source
+        srcset="./images/mobile-apple.png 1x, ./images/mobile-apple@2x.png 2x"
+        media="(max-width:767px)"
+      />
+      <source
+        srcset="./images/tablet-apple.png 1x, ./images/tablet-apple@2x.png 2x"
+        media="(max-width:1279px)"
+      />
+      <source
+        srcset="./images/desktop-apple.png 1x, ./images/desktop-apple@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <img src="./images/mobile-apple.png" alt="Phone" />
+    </picture>
+  </div>
+  <div class="hero__wraper--decor">
+    <picture>
+      <source
+        srcset="./images/desktop-decor.png 1x, ./images/desktop-decor@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="./images/tablet-decor.png 1x, ./images/tablet-decor@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <img src="./images/tablet-decor.png" alt="Decor" />
+    </picture>
+  </div>
+</section>
