@@ -39,17 +39,18 @@ img {
   width: 100%;
   top: 20px;
   z-index: 100;
+  background: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
   @media screen and (min-width: 1280px) {
     top: 26px;
   }
 }
 
 .header__container {
-  background: linear-gradient(
-    90.03deg,
-    rgba(0, 197, 235, 0.3) -1.97%,
-    rgba(181, 68, 254, 0.3) 89.43%
-  );
+
   display: flex;
   padding: 14px 20px;
   align-items: center;
@@ -215,7 +216,7 @@ img {
 
 /* HERO */
 .hero {
-  max-width: 480px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 
@@ -239,7 +240,7 @@ img {
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    max-width: 100%;
     padding-top: 142px;
     padding-bottom: 143px;
     padding-left: 32px;
@@ -255,7 +256,7 @@ img {
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    max-width: 100%;
     padding-top: 243px;
     padding-bottom: 146px;
     padding-left: 16px;
@@ -411,11 +412,11 @@ img {
   @media screen and (min-width: 768px) {
     position: absolute;
     bottom: 0;
-    left: 199px;
+    left: calc(100% - 580px);
   }
   @media screen and (min-width: 1280px) {
     position: absolute;
     top: 227px;
-    left: 339px;
+    left: calc(100% - 920px);
   }
 }
