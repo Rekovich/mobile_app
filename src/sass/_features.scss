@@ -1,0 +1,281 @@
+.features__title, .features__explanation, .features__subtitle, .features__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.features__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.features__pic {
+    max-width: 100%;
+    height: auto;
+}
+
+// key features
+.features {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $white-text-color;
+    display: flex;
+    // position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    @media screen and (max-width: 767px) {
+        background: url(../images/bgnd-image.svg) no-repeat center/cover;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 165px;
+        background: url(../images/bgnd-desktop.svg) no-repeat center/cover;
+    }
+
+    &__container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+
+        
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            max-width: 768px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        justify-content: center;
+        color: $text-color;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2083;
+        }
+
+        @media screen and (max-width: 1279px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    }
+
+
+
+    &__explanation {
+        font-weight: 500;
+        text-align: center;
+        color: $text-color;
+        
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 1.7143;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 704px;
+            margin-bottom: 40px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 886px;
+            margin-bottom: 80px;
+            // padding-left: 196px;
+            // padding-right: 198px;
+        }
+    }
+
+    &__pic {
+        display: block;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+            // z-index: 9;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            position: absolute;
+            left: 0;
+        }
+
+        @media screen and (min-width: 1280px) {
+            position: absolute;
+            // top: 277px;
+            // right: 443px;
+            top: 237px;
+            left: 441px;
+        }
+    }
+
+
+    
+    &__list {
+        display: flex;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px;
+            // flex-wrap: wrap;
+            // padding-left: 380px;
+            // position: relative;
+            padding-right: 40px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            flex-wrap: wrap;
+            gap: 453px;
+            // padding-left: 849px;
+            // position: relative;
+            margin-top: 57px;
+            row-gap: 80px;
+            padding-left: 137px;
+        }
+    }
+
+    &__item {
+        justify-content: center;
+
+        & h3 {
+            position: relative;
+        }
+
+        & h3::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            content: "";
+            width: 28px;
+            height: 28px;
+            background-image: url(../images/mark-eth-nft.png);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            // max-width: 278px;
+            // max-height: 88px;
+
+            // &:last-child {
+            //     position: absolute;
+            //     top: 672px;
+            //     left: 32px;
+            // }
+
+            &:nth-child(-n + 4) {
+                grid-column: span 2;
+                display: flex;
+                justify-content: end;
+            }
+
+            &:nth-child(n + 5) {
+                max-width: 278px;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 260px;
+            // flex-basis: 50%;
+
+            &:nth-child(2n) {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            // &:nth-child(1) {
+            //     position: absolute;
+            //     top: 0;
+            //     left: 137px;
+            // }
+
+            // &:nth-child(2) {
+            //     position: absolute;
+            //     top: 185px;
+            //     left: 137px;
+            // }
+
+            // &:nth-child(3) {
+            //     position: absolute;
+            //     top: 370px;
+            //     left: 137px;
+            // }
+        }
+    }
+
+    &__item-style {
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            max-width: 278px;
+            height: 88px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 259px;
+        }
+    }
+
+    &__subtitle {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        padding-left: 40px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2143;
+        margin-top: 13px;
+
+        @media screen and (max-width: 767px) {
+            padding-left: 39px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            padding-left: 40px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            // max-width: 240px;
+            // max-height: 68px;
+            padding-left: 39px;
+        }
+    }
+}
