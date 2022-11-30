@@ -1,11 +1,25 @@
+.footer {
+  background-color: $bgc-dark;
+  border-top: 1px solid$white-text-color;
+  padding: 22px 0;
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    padding: 22px 0 28px;
+  }
+}
 .footer-support {
-    border-top: 1px solid #ffffff;
+}
+.footer-support {
+  @media screen and (max-width: 767.98px) {
+  }
 }
 
 .footer-support__text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
-    margin-left: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white-text-color;
+  @media screen and (max-width: 767.98px) {
+    max-width: 193px;
+    margin-left: 4px;
+  }
 }

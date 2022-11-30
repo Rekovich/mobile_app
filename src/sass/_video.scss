@@ -39,7 +39,7 @@ p {
     background-image: url(../images/bg-desctop@2x.jpg);
   }
   &__container {
-    @media screen and (min-width: 1279.98px) {
+    @media screen and (min-width: 1280px) {
       display: flex;
     }
   }
