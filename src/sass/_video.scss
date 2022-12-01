@@ -20,6 +20,7 @@ p {
     background-image: url(../images/bg-mobile@2x.jpg);
   }
   @media screen and (max-width: 1279.98px) {
+    padding-top: 80px;
     background-image: url(../images/bg-tablet.jpg);
   }
 
@@ -30,6 +31,7 @@ p {
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 60px;
     background-image: url(../images/bg-desctop.jpg);
   }
 

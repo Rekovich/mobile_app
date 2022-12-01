@@ -29,10 +29,11 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-        padding-bottom: 80px;
+        padding: 80px 0;
     }
 
     @media screen and (min-width: 1280px) {
+        padding-top: 80px;
         padding-bottom: 165px;
         background: url(../images/bgnd-desktop.svg) no-repeat center/cover;
     }

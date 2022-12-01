@@ -38,14 +38,19 @@ img {
   position: absolute;
   width: 100%;
   top: 20px;
+
   z-index: 100;
   background: linear-gradient(
     90.03deg,
     rgba(0, 197, 235, 0.3) -1.97%,
     rgba(181, 68, 254, 0.3) 89.43%
   );
+  @media screen and (min-width: 768px) {
+    padding: 14px 0;
+  }
   @media screen and (min-width: 1280px) {
     top: 26px;
+    padding: 19px 0;
   }
 }
 
@@ -274,7 +279,7 @@ img {
 .hero__container {
   @media screen and (max-width: 767.98px) {
     max-width: 480px;
-    position: absolute;
+    position: relative;
     z-index: 1;
     padding-left: 20px;
   }
